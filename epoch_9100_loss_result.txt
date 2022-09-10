@@ -8,3 +8,4 @@
 7th epochs learning rate 0.001,train loss 0.012298136072026358, valid loss 0.020300391767370075 
 8th epochs learning rate 0.001,train loss 0.012099558226764203, valid loss 0.0192280201274052 
 9th epochs learning rate 0.001,train loss 0.011811227319693123, valid loss 0.019269391273458798 
+10th epochs learning rate 0.001,train loss 0.011546418757606593, valid loss 0.018978917023591828 
