@@ -131,7 +131,8 @@ class SAConvLSTMCell(nn.Module):
         self.bias = bias
 
         self.attention_layer = SA_Attn_Mem(hidden_dim, att_hidden_dim)
-        self.attention_layer_c = SA_Attn_Mem(hidden_dim, att_hidden_dim)
+        # self.attention_layer_longc_h = SA_Attn_Mem(hidden_dim, att_hidden_dim)
+        self.attention_layer_c_h = SA_Attn_Mem(hidden_dim, att_hidden_dim)
         self.attention_layer_h_x = SA_Attn_Mem(hidden_dim, att_hidden_dim)
 
         self.conv = nn.Sequential(
@@ -161,6 +162,8 @@ class SAConvLSTMCell(nn.Module):
 
         h_cur, c_cur, m_cur ,long_c_cur = cur_state
         input_tensor, h_cur = self.attention_layer_h_x(input_tensor, h_cur)
+        h_cur, c_cur = self.attention_layer_c_h(h_cur, c_cur)
+        # c_cur, long_c_cur = self.attention_layer_longc_h(c_cur, long_c_cur)
         # print("h_cur:",h_cur.cpu().data.numpy().shape)
         combined = torch.cat([input_tensor, h_cur], dim=1)
         combined_conv = self.conv(combined)
