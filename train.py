@@ -245,7 +245,7 @@ def train(model,generator,discriminator,optimizer_D,optimizer_G, train_dataloade
             'epoch': i,
         }
         torch.save(state, save_dir / f"checkpoint_epochs_{epochs}.pt")
-        print('{}th learning rate {},train loss {}, valid loss {}'.format(i, optimizer_model.state_dict()['param_groups'][0]['lr'], np.mean(valid_loss)))
+        print('{}th learning rate {},train loss {}, valid loss {}'.format(i, optimizer_model.state_dict()['param_groups'][0]['lr'], np.mean(train_loss), np.mean(valid_loss)))
         f = open("epoch_"+str(epochs)+"_loss_result.txt","a+")
         f.write('{}th epochs learning rate {},train loss {}, valid loss {} \n'.format(i, optimizer_model.state_dict()['param_groups'][0]['lr'], np.mean(train_loss), np.mean(valid_loss)))
         f.close()
