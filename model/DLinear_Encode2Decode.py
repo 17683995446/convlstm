@@ -157,7 +157,7 @@ class Encode2Decode(nn.Module):
             out = x
             for i, cell in enumerate(self.cell_list):
                 h_next, c_next, m_next, long_c_next,long_long_c_next = cell(out, hidden_state[i])
-                out, hidden_state[i] = h_next, (h_next, c_next, m_next, long_long_c_next)
+                out, hidden_state[i] = h_next, (h_next, c_next, m_next,long_c_next, long_long_c_next)
                 out = self.bns[i](out)
 
 

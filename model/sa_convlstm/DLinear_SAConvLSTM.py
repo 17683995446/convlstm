@@ -165,7 +165,6 @@ class SAConvLSTMCell(nn.Module):
         )
 
     def forward(self, input_tensor, cur_state):
-        print(cur_state)
         # print("input_tensor",input_tensor.cpu().data.numpy().shape)
         # import matplotlib.pyplot as plt
         # plt.imshow(input_tensor.cpu().data.numpy()[0][0])
