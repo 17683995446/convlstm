@@ -245,7 +245,7 @@ def train(model,generator,discriminator,optimizer_D,optimizer_G, train_dataloade
             'epoch': i,
         }
         torch.save(state, save_dir / f"checkpoint_epochs_{epochs}.pt")
-        print('{}th epochs train loss {},G_train loss {}, valid loss {}'.format(i, np.mean(train_loss), np.mean(train_loss), np.mean(valid_loss)))
+        print('{}th epochs learning rate {},train loss {}, valid loss {}'.format(i, optimizer_model.state_dict()['param_groups'][0]['lr'], np.mean(train_loss), np.mean(valid_loss)))
         f = open("epoch_"+str(epochs)+"_loss_result.txt","a+")
         f.write('{}th epochs learning rate {},train loss {}, valid loss {} \n'.format(i, optimizer_model.state_dict()['param_groups'][0]['lr'], np.mean(train_loss), np.mean(valid_loss)))
         f.close()
@@ -258,7 +258,7 @@ def train(model,generator,discriminator,optimizer_D,optimizer_G, train_dataloade
         os.system("git config --global user.email \"2358384171@qq.com\"")
         os.system("git config --global user.name \"17683995446\"")
         os.system(f'git commit -m \"{epochs},{i},{ite}\" ')
-        os.system("git push --force origin HEAD:9010")
+        os.system("git push --force origin HEAD:0903")
 
 
         plt.plot(avg_train_losses, '-o')
