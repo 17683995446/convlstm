@@ -5,3 +5,4 @@
 4th epochs learning rate 0.001,train loss 0.017262197779284585, valid loss 0.021585022867248768 
 5th epochs learning rate 0.001,train loss 0.016315843832023717, valid loss 0.02028273108104865 
 6th epochs learning rate 0.001,train loss 0.015564879993242877, valid loss 0.019259798552906306 
+7th epochs learning rate 0.001,train loss 0.01489083585743275, valid loss 0.019661845606670045 
