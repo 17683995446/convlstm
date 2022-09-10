@@ -324,7 +324,7 @@ def test(model, test_dataloader, criterion, ckp_path, device):
 def get_config():
     # TODO: get config from yaml file
     config = {
-        "epoch": 9010,
+        "epoch": 9080,
         'input_dim': 1,
         'batch_size': 32,
         'padding': 1,
