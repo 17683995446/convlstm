@@ -23,3 +23,4 @@
 22th epochs learning rate 0.001,train loss 0.011877031344020569, valid loss 0.016722554798450386 
 23th epochs learning rate 0.001,train loss 0.011744549269787968, valid loss 0.020306866812078578 
 24th epochs learning rate 0.001,train loss 0.011609872413178285, valid loss 0.018283609039427943 
+25th epochs learning rate 0.001,train loss 0.01148878126214139, valid loss 0.01704150381122242 
