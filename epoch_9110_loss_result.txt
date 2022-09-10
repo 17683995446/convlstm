@@ -18,3 +18,4 @@
 17th epochs learning rate 0.001,train loss 0.012710965314627062, valid loss 0.017259664898901655 
 18th epochs learning rate 0.001,train loss 0.012504331706560146, valid loss 0.01690157836205081 
 19th epochs learning rate 0.001,train loss 0.012329694327587883, valid loss 0.017247134623558896 
+20th epochs learning rate 0.001,train loss 0.012167897073049393, valid loss 0.017672171799890828 
