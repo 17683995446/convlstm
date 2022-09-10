@@ -258,7 +258,7 @@ def train(model,generator,discriminator,optimizer_D,optimizer_G, train_dataloade
         os.system("git config --global user.email \"2358384171@qq.com\"")
         os.system("git config --global user.name \"17683995446\"")
         os.system(f'git commit -m \"{epochs},{i},{ite}\" ')
-        os.system("git push --force origin HEAD:9010")
+        os.system("git push --force origin HEAD:9100")
 
 
         plt.plot(avg_train_losses, '-o')
