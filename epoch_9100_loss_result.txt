@@ -1,3 +1,4 @@
 0th epochs learning rate 0.001,train loss 0.027453899631897608, valid loss 0.03290040310668318 
 1th epochs learning rate 0.001,train loss 0.024347427505999802, valid loss 0.028533963127094403 
 2th epochs learning rate 0.001,train loss 0.022015548530552122, valid loss 0.025854802608751414 
+3th epochs learning rate 0.001,train loss 0.02016400013325943, valid loss 0.02419290531492024 
