@@ -45,3 +45,4 @@
 44th epochs learning rate 0.001,train loss 0.007418668791522375, valid loss 0.015426793380787498 
 45th epochs learning rate 0.001,train loss 0.007399241212098038, valid loss 0.015294272272863932 
 46th epochs learning rate 0.001,train loss 0.007379669260210645, valid loss 0.014977257355655494 
+47th epochs learning rate 0.001,train loss 0.007339772224774835, valid loss 0.01479615637084894 
