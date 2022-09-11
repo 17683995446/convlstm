@@ -80,3 +80,4 @@
 79th epochs learning rate 0.001,train loss 0.005321028447374451, valid loss 0.015173786328034063 
 80th epochs learning rate 0.001,train loss 0.005307580872524067, valid loss 0.015265334562390251 
 81th epochs learning rate 0.001,train loss 0.005298034465753488, valid loss 0.013727242440249013 
+82th epochs learning rate 0.001,train loss 0.0052826587963607854, valid loss 0.014253843452089129 
