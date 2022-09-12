@@ -75,3 +75,4 @@
 74th epochs learning rate 0.0005,train loss 0.005832194770531108, valid loss 0.014005502800277451 
 75th epochs learning rate 0.0005,train loss 0.005806139012421268, valid loss 0.013789580710101546 
 76th epochs learning rate 0.0005,train loss 0.005786526708829182, valid loss 0.013155273913422175 
+77th epochs learning rate 0.0005,train loss 0.005753490563307763, valid loss 0.013618795495284232 
