@@ -37,3 +37,4 @@
 36th epochs learning rate 0.001,train loss 0.0109651207605058, valid loss 0.017051119667788345 
 37th epochs learning rate 0.001,train loss 0.010898404875606822, valid loss 0.016097972316569405 
 38th epochs learning rate 0.001,train loss 0.010814834422461074, valid loss 0.015969732563877313 
+39th epochs learning rate 0.001,train loss 0.010737452174433403, valid loss 0.015578929400234892 
