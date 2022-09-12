@@ -117,3 +117,4 @@
 116th epochs learning rate 0.001,train loss 0.00460820266769992, valid loss 0.014051976234577926 
 117th epochs learning rate 0.001,train loss 0.004598997331091336, valid loss 0.013963275168717435 
 118th epochs learning rate 0.001,train loss 0.004294153814617958, valid loss 0.013440830872056232 
+119th epochs learning rate 0.001,train loss 0.004281848746921039, valid loss 0.015001219919825021 
