@@ -95,3 +95,4 @@
 94th epochs learning rate 0.001,train loss 0.005314087336494897, valid loss 0.014071659710672167 
 95th epochs learning rate 0.001,train loss 0.005272184854838997, valid loss 0.014965810597770744 
 96th epochs learning rate 0.001,train loss 0.005254486336618559, valid loss 0.01399177354036106 
+97th epochs learning rate 0.001,train loss 0.005236127286373327, valid loss 0.015045916996896266 
