@@ -1,0 +1,12 @@
+0th epochs learning rate 0.001,train loss 0.027453899631897608, valid loss 0.03290040310668318 
+1th epochs learning rate 0.001,train loss 0.024347427505999802, valid loss 0.028533963127094403 
+2th epochs learning rate 0.001,train loss 0.022015548530552122, valid loss 0.025854802608751414 
+3th epochs learning rate 0.001,train loss 0.02016400013325943, valid loss 0.02419290531492024 
+4th epochs learning rate 0.001,train loss 0.013180319608913528, valid loss 0.022529387552487224 
+5th epochs learning rate 0.001,train loss 0.012956244512978526, valid loss 0.022142149017829644 
+6th epochs learning rate 0.001,train loss 0.012639441691614963, valid loss 0.021102533920815115 
+7th epochs learning rate 0.001,train loss 0.012298136072026358, valid loss 0.020300391767370075 
+8th epochs learning rate 0.001,train loss 0.012099558226764203, valid loss 0.0192280201274052 
+9th epochs learning rate 0.001,train loss 0.011811227319693123, valid loss 0.019269391273458798 
+10th epochs learning rate 0.001,train loss 0.011546418757606593, valid loss 0.018978917023591828 
+11th epochs learning rate 0.001,train loss 0.011295525582196812, valid loss 0.019238337482276716 
