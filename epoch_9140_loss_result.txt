@@ -29,3 +29,4 @@
 28th epochs learning rate 0.001,train loss 0.011535653688184832, valid loss 0.01714745734148381 
 29th epochs learning rate 0.001,train loss 0.011403632493482696, valid loss 0.01602369638388617 
 30th epochs learning rate 0.001,train loss 0.01128526440010436, valid loss 0.015994909758630552 
+31th epochs learning rate 0.001,train loss 0.011177816749227026, valid loss 0.016519444798560518 
