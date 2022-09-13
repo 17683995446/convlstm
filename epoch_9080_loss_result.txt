@@ -223,3 +223,4 @@
 222th epochs learning rate 6.25e-05,train loss 0.004106283565125768, valid loss 0.015049200390645286 
 223th epochs learning rate 6.25e-05,train loss 0.004104972611020469, valid loss 0.015244128296903352 
 224th epochs learning rate 6.25e-05,train loss 0.004102667414082645, valid loss 0.015082207590080145 
+225th epochs learning rate 6.25e-05,train loss 0.00410231839715672, valid loss 0.015129680843337587 
