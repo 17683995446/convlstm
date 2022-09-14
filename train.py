@@ -271,19 +271,33 @@ def train(model,generator,discriminator,optimizer_D,optimizer_G, train_dataloade
         plt.clf()
 
 
-def test(model, test_dataloader, criterion, ckp_path, device):
-    model.load_state_dict(torch.load(ckp_path, map_location=device))
+
+def test(model,generator,discriminator,optimizer_D,optimizer_G, test_dataloader, criterion,device, epochs=10,save_dir=Path("outputs")):
+    ckpt_path = os.path.join(save_dir, f'checkpoint_epochs_{epochs}.pt')
+    if os.path.exists(ckpt_path):
+        ckpt = torch.load(ckpt_path,map_location='cpu')
+        model.load_state_dict(ckpt['model'])
+        generator.load_state_dict(ckpt['generator'])
+        discriminator.load_state_dict(ckpt['discriminator'])
+    # model.load_state_dict(torch.load(ckp_path, map_location=device))
     test_pred, test_gt = [], []
+    test_pred_0, test_gt_0 = [], []
+    pre_epoch = 10000
     with torch.no_grad():
         model.eval()
         for i, (x, y) in enumerate(test_dataloader):
             x, y = x.to(device), y.to(device)
-            pred = model(x, y, teacher_forcing_rate=0)
+            pred,pred_val_0,generator,discriminator,optimizer_D,optimizer_G = model(i,pre_epoch,x, y,generator,discriminator,optimizer_D,optimizer_G, teacher_forcing_rate=0,val_flag=True)
             test_pred.append(pred.cpu().data.numpy())
             test_gt.append(y.cpu().data.numpy())
+            test_pred_0.append(pred)
+            test_gt_0.append(y)
+    # print(test_pred)
     test_pred = np.concatenate(test_pred)
     test_gt = np.concatenate(test_gt)
-    mse = criterion(test_gt, test_pred)
+    test_pred_0 = torch.cat(test_pred_0)
+    test_gt_0 = torch.cat(test_gt_0)
+    mse = criterion(test_gt_0, test_pred_0)
     print('TEST Data loader - MSE = {:.6f}'.format(mse))
 
     # Frame-wise comparison in MSE and SSIM
@@ -314,17 +328,17 @@ def test(model, test_dataloader, criterion, ckp_path, device):
     print(f'frame_mse.shape {frame_mse}')
     print(f'frame_ssim.shape {frame_ssim}')
 
-    path_pred = './results/npy_file_save/saconvlstm_test_pred_speedpt5.npy'
-    path_gt = './results/npy_file_save/saconvlstm_test_gt_speedpt5.npy'
-
-    np.save(path_pred, test_pred)
-    np.save(path_gt, test_gt)
+    # path_pred = './results/npy_file_save/saconvlstm_test_pred_speedpt5.npy'
+    # path_gt = './results/npy_file_save/saconvlstm_test_gt_speedpt5.npy'
+    #
+    # np.save(path_pred, test_pred)
+    # np.save(path_gt, test_gt)
 
 
 def get_config():
     # TODO: get config from yaml file
     config = {
-        "epoch": 9150,
+        "epoch": 9160,
         'input_dim': 1,
         'batch_size': 32,
         'padding': 1,
@@ -334,7 +348,7 @@ def get_config():
         'kernel_size': (3, 3),
         'img_size': (16, 16),
         'hidden_dim': 64,
-        'num_layers': 1,
+        'num_layers': 4,
         'output_dim': 10,
         'input_window_size': 10,
         'loss': "L2",
@@ -382,9 +396,12 @@ def main():
     optimizer_model = optim.Adam(model.parameters(), lr=config['lr'])
     # ****************** start training ************************#
     train(model,generator,discriminator,optimizer_D,optimizer_G, train_dataloader, valid_dataloader, criterion,optimizer_model,device,epochs=config["epoch"])
-    # print(next(iter(train_dataloader))[0].shape)
+
+
     # test_data = MovingMNIST(config["root"], train=False)
-    # test(model, test_dataloader, criterion,ckp_path=,device)
+    # test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=config['batch_size'], shuffle=False,
+    #                                               num_workers=0)
+    # test(model,generator,discriminator,optimizer_D,optimizer_G, test_dataloader, criterion=criterion,device=device, epochs=config["epoch"],save_dir=Path("outputs"))
 
 
 if __name__ == '__main__':

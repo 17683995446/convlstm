@@ -142,7 +142,6 @@ class Encode2Decode(nn.Module):
         train_losses_G = []
 
         for t in range(seq_len+horizon-1):
-
             if t < seq_len or random.random() < teacher_forcing_rate:
                 x = frames[:, t, :, :, :]
             else:
