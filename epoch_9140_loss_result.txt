@@ -53,3 +53,4 @@
 52th epochs learning rate 0.0005,train loss 0.006557543522693099, valid loss 0.01470798134738416 
 53th epochs learning rate 0.0005,train loss 0.006513273890095728, valid loss 0.014236983287622008 
 54th epochs learning rate 0.0005,train loss 0.006481645109726944, valid loss 0.01555397183421934 
+55th epochs learning rate 0.0005,train loss 0.006449574140186598, valid loss 0.014394042980775498 
