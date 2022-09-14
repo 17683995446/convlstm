@@ -147,3 +147,4 @@
 146th epochs learning rate 0.0005,train loss 0.00529615867948323, valid loss 0.014138390980007355 
 147th epochs learning rate 0.0005,train loss 0.005284979751285834, valid loss 0.01411356232864292 
 148th epochs learning rate 0.0005,train loss 0.005274138282208393, valid loss 0.014147844132885598 
+149th epochs learning rate 0.0005,train loss 0.005265960259322673, valid loss 0.014503105363824912 
