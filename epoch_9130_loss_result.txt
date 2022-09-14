@@ -131,3 +131,4 @@
 130th epochs learning rate 0.0005,train loss 0.005546787981169693, valid loss 0.01425585750359715 
 131th epochs learning rate 0.0005,train loss 0.005524193762221198, valid loss 0.01405317393507351 
 132th epochs learning rate 0.0005,train loss 0.005506197840268551, valid loss 0.01564664300531149 
+133th epochs learning rate 0.0005,train loss 0.005487179616548949, valid loss 0.014910342759991946 
