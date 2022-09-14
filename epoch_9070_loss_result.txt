@@ -205,3 +205,4 @@
 204th epochs learning rate 0.0005,train loss 0.003154618869401709, valid loss 0.01409100086749655 
 205th epochs learning rate 0.0005,train loss 0.003152155977714071, valid loss 0.014063958721482648 
 206th epochs learning rate 0.0005,train loss 0.00314993663143628, valid loss 0.014132786187780114 
+207th epochs learning rate 0.0005,train loss 0.003147773212261705, valid loss 0.014295917235117042 
