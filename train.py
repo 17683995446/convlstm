@@ -340,7 +340,7 @@ def get_config():
     config = {
         "epoch": 9160,
         'input_dim': 1,
-        'batch_size': 32,
+        'batch_size': 16,
         'padding': 1,
         'lr': 0.001,
         'device': "cuda:0" if torch.cuda.is_available() else "cup",
