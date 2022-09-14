@@ -13,3 +13,4 @@
 12th epochs learning rate 0.001,train loss 0.01283798326459578, valid loss 0.01648201223201396 
 13th epochs learning rate 0.001,train loss 0.012558423805360992, valid loss 0.01817480677313972 
 14th epochs learning rate 0.001,train loss 0.012267293593397847, valid loss 0.01630438153484934 
+15th epochs learning rate 0.001,train loss 0.012031180850592339, valid loss 0.017798597058444693 
