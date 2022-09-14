@@ -104,3 +104,4 @@
 103th epochs learning rate 0.0005,train loss 0.00425525151638557, valid loss 0.013849039725436453 
 104th epochs learning rate 0.0005,train loss 0.0042519797938358455, valid loss 0.013813034320871035 
 105th epochs learning rate 0.0005,train loss 0.004243476279079914, valid loss 0.013723365668403474 
+106th epochs learning rate 0.0005,train loss 0.004242076038573988, valid loss 0.0133256129103533 
