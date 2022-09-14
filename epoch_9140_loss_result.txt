@@ -69,3 +69,4 @@
 68th epochs learning rate 0.0005,train loss 0.006157814861585696, valid loss 0.014373398598348885 
 69th epochs learning rate 0.0005,train loss 0.006140009440134503, valid loss 0.014415021103463675 
 70th epochs learning rate 0.0005,train loss 0.006122498856469368, valid loss 0.014593750973673244 
+71th epochs learning rate 0.0005,train loss 0.006106300031584421, valid loss 0.014282817837961932 
