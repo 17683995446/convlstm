@@ -173,3 +173,4 @@
 172th epochs learning rate 0.0005,train loss 0.004703217940749946, valid loss 0.014551019557473953 
 173th epochs learning rate 0.0005,train loss 0.004689415210340586, valid loss 0.014683484606314124 
 174th epochs learning rate 0.0005,train loss 0.0047227342273437915, valid loss 0.01614488994604663 
+175th epochs learning rate 0.0005,train loss 0.00473553017773493, valid loss 0.01419623534342176 
