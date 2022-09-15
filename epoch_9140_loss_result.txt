@@ -90,3 +90,4 @@
 89th epochs learning rate 0.00025,train loss 0.005199953631963581, valid loss 0.014253229638071437 
 90th epochs learning rate 0.00025,train loss 0.005175084302950109, valid loss 0.014366578947948782 
 91th epochs learning rate 0.00025,train loss 0.005154674756118939, valid loss 0.014247372043890911 
+92th epochs learning rate 0.00025,train loss 0.005130973086588913, valid loss 0.01422745384798761 
