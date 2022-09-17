@@ -212,7 +212,7 @@ class SAConvLSTMCell(nn.Module):
         # #
         # c_next = long_o * torch.tanh(long_c_next)
         long_c_next = long_c_cur
-        long_long_c_next = long_long_c_cur
+
         # ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆这里是新插入的内容，为了改编LSTM结构，如果没用，最后要删除这部分。
         # long_c_next = long_c_cur
         h_next = o * torch.tanh(c_next)
